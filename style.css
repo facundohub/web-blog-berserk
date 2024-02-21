@@ -1,0 +1,230 @@
+/*navbar*/
+
+:root{
+    --color--white:#ffffff;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: var(--color--white);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: var(--color--white);
+    text-decoration: none;
+}
+
+.menu-btn {
+    cursor: pointer;
+    position: relative;
+    right: 30px;
+    z-index: 2;
+    display: none;
+}
+
+.container1 {
+    margin: 25px auto;
+    width: 95%;
+}
+
+.nav-main {
+    align-items: center;
+    display: flex;
+    font-size: 10px;
+    height: 25px;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.nav-logo {
+    width: 85px;
+}
+
+.nav-main ul {
+    display: flex;
+}
+
+.nav-main ul li {
+    padding: 30px;
+}
+
+.nav-main ul li a {
+    padding: 5px;
+}
+
+.nav-main ul li a:hover {
+    border-bottom: 2px solid var(--color--white);
+}
+
+.nav-search input {
+    border-radius: 4px;
+    padding: 3px;
+}
+
+/*media queris navbar*/
+
+@media (max-width: 1050px) {
+    .menu-btn {display: block;}
+    .nav-main ul.nav-menu{
+        background-color: black;
+        display: block;
+        height: 100%;
+        left: 0;
+        opacity: 0.6;
+        padding: 5px;
+        position: absolute;
+        top: 0px;
+        transform: translateX(-400px);
+        transition: transform 1s;
+    }
+
+    .nav-main form.nav-search {
+        margin-right: 66px;
+    }
+
+    .nav-main ul.nav-menu.show {
+        transform: translateX(-20px)
+    }
+
+    .nav-main ul.nav-menu li {
+        font-size: 10px;
+        padding: 20px;
+    }
+    
+}
+
+/*imagen principal responsive*/
+
+.container2 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-family: lato;
+    margin: 50px 0px;
+    font-size: 1.8rem;
+}
+
+.container2 {width: 75vw;
+    max-width: 850px;
+    min-width: 320px;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow:  0px 3px 5px rgba(15, 15, 15, .5);
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+
+.bienvenida {
+    text-align: center;
+    font-family: fantasy;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 50px;
+}
+
+.video {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+.parrafovideo {
+    text-align: center;
+    font-family: fantasy;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.video2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+.about {
+    color: wheat;
+    text-align: inherit; 
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.redes {
+    display: flex;
+    align-items: baseline;
+    justify-content: max-height 90px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+}
+
+.face {
+    display: flex;
+    margin-right: 50px;
+    max-width: 90px;
+    max-height: 90px;
+}
+
+.insta {
+    display: flex;
+    margin-right: 50px;
+    max-width: 90px;
+    max-height: 90px;
+}
+
+.x {
+    display: flex;
+    margin-right: 50px;
+    max-width: 105px;
+    max-height: 90px;
+}
+
+.parramanga {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.parralink {
+    text-align: center;
+}
+
+.links {
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-bottom: 100px;
+}
+
+.conlinkimg {
+    display: flex;
+    text-align: center;
+    margin-left: 250px;
+    font-family: 'Rubik Burned', system-ui;
+}
+
+.dragonslayer {
+    margin-left: 100px;
+    width: 600px;
+    height: 1312px;
+    margin-top: 50px;
+}
